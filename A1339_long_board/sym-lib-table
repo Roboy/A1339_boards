@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name A1339_long_board-rescue)(type Legacy)(uri ${KIPRJMOD}/A1339_long_board-rescue.lib)(options "")(descr ""))
 )
