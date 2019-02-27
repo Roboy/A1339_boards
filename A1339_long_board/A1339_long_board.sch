@@ -107,84 +107,18 @@ NoConn ~ 6050 3350
 NoConn ~ 6050 3450
 NoConn ~ 6050 3550
 $Comp
-L Connector_Specialized:Test_Point TP1
-U 1 1 5B9FB805
-P 7150 3350
-F 0 "TP1" V 7104 3538 50  0000 L CNN
-F 1 "5V" V 7195 3538 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 3350 50  0001 C CNN
-F 3 "~" H 7350 3350 50  0001 C CNN
-	1    7150 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Specialized:Test_Point TP2
-U 1 1 5B9FB8A6
-P 7150 3500
-F 0 "TP2" V 7104 3688 50  0000 L CNN
-F 1 "MISO" V 7195 3688 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 3500 50  0001 C CNN
-F 3 "~" H 7350 3500 50  0001 C CNN
-	1    7150 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Specialized:Test_Point TP3
-U 1 1 5B9FB8F0
-P 7150 3650
-F 0 "TP3" V 7104 3838 50  0000 L CNN
-F 1 "MOSI" V 7195 3838 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 3650 50  0001 C CNN
-F 3 "~" H 7350 3650 50  0001 C CNN
-	1    7150 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Specialized:Test_Point TP4
-U 1 1 5B9FB912
-P 7150 3800
-F 0 "TP4" V 7104 3988 50  0000 L CNN
-F 1 "SCK" V 7195 3988 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 3800 50  0001 C CNN
-F 3 "~" H 7350 3800 50  0001 C CNN
-	1    7150 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Specialized:Test_Point TP5
-U 1 1 5B9FB932
-P 7150 3950
-F 0 "TP5" V 7104 4138 50  0000 L CNN
-F 1 "CS" V 7195 4138 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 3950 50  0001 C CNN
-F 3 "~" H 7350 3950 50  0001 C CNN
-	1    7150 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Specialized:Test_Point TP6
-U 1 1 5B9FB954
-P 7150 4100
-F 0 "TP6" V 7104 4288 50  0000 L CNN
-F 1 "GND" V 7195 4288 50  0000 L CNN
-F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 7350 4100 50  0001 C CNN
-F 3 "~" H 7350 4100 50  0001 C CNN
-	1    7150 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+5V #PWR03
 U 1 1 5B9FB99D
-P 7000 3350
-F 0 "#PWR03" H 7000 3200 50  0001 C CNN
-F 1 "+5V" H 7015 3523 50  0000 C CNN
-F 2 "" H 7000 3350 50  0001 C CNN
-F 3 "" H 7000 3350 50  0001 C CNN
-	1    7000 3350
+P 7200 3500
+F 0 "#PWR03" H 7200 3350 50  0001 C CNN
+F 1 "+5V" H 7215 3673 50  0000 C CNN
+F 2 "" H 7200 3500 50  0001 C CNN
+F 3 "" H 7200 3500 50  0001 C CNN
+	1    7200 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3350 7150 3350
+	7200 3500 7350 3500
 $Comp
 L power:+5V #PWR04
 U 1 1 5B9FBA75
@@ -236,16 +170,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR06
 U 1 1 5B9FBD9A
-P 7000 4100
-F 0 "#PWR06" H 7000 3850 50  0001 C CNN
-F 1 "GND" H 7005 3927 50  0000 C CNN
-F 2 "" H 7000 4100 50  0001 C CNN
-F 3 "" H 7000 4100 50  0001 C CNN
-	1    7000 4100
+P 7200 4000
+F 0 "#PWR06" H 7200 3750 50  0001 C CNN
+F 1 "GND" H 7205 3827 50  0000 C CNN
+F 2 "" H 7200 4000 50  0001 C CNN
+F 3 "" H 7200 4000 50  0001 C CNN
+	1    7200 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 4100 7150 4100
+	7200 4000 7350 4000
 Text Label 6300 3650 2    50   ~ 0
 MISO
 Text Label 6300 3750 2    50   ~ 0
@@ -262,24 +196,24 @@ Wire Wire Line
 	6300 3750 6050 3750
 Wire Wire Line
 	6050 3650 6300 3650
-Text Label 6900 3500 0    50   ~ 0
+Text Label 7100 3600 0    50   ~ 0
 MISO
-Text Label 6900 3650 0    50   ~ 0
+Text Label 7100 3700 0    50   ~ 0
 MOSI
-Text Label 6900 3800 0    50   ~ 0
+Text Label 7100 3800 0    50   ~ 0
 SCLK
-Text Label 6900 3950 0    50   ~ 0
+Text Label 7100 3900 0    50   ~ 0
 CS
 Wire Wire Line
-	6900 3950 7150 3950
+	7100 3900 7350 3900
 Wire Wire Line
-	6900 3800 7150 3800
+	7100 3800 7350 3800
 Wire Wire Line
-	6900 3650 7150 3650
+	7100 3700 7350 3700
 Wire Wire Line
-	6900 3500 7150 3500
+	7100 3600 7350 3600
 $Comp
-L Mechanical:Mounting_Hole_PAD MK1
+L A1339_long_board-rescue:Mounting_Hole_PAD-Mechanical MK1
 U 1 1 5BAA9236
 P 3400 3300
 F 0 "MK1" H 3500 3351 50  0000 L CNN
@@ -292,4 +226,15 @@ $EndComp
 Wire Wire Line
 	3400 3400 3150 3400
 Connection ~ 3150 3400
+$Comp
+L custom:TE-Connectivity_Micro_Match_215079-6 J1
+U 1 1 5C76C55D
+P 7550 3750
+F 0 "J1" H 7627 3791 50  0000 L CNN
+F 1 "TE-Connectivity_Micro_Match_215079-6" H 7627 3700 50  0000 L CNN
+F 2 "custom_lib:TE-Connectivity_Micro-Match_connector_02x03_Pitch_1.27mm" H 7550 3850 50  0001 C CNN
+F 3 "" H 7550 3850 50  0001 C CNN
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
